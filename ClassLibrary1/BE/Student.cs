@@ -6,5 +6,6 @@ namespace ClassLibrary1.BE
 {
     class Student
     {
+
     }
 }
