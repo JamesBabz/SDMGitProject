@@ -14,12 +14,12 @@ namespace SDMBLL.InterfaceServices
         //R
         List<Company> GetAll();
 
-        Company Get(int id);
+        Company Get(int cvr);
 
         //U
         Company Update(Company company);
 
         //D
-        Company Delete(int id);
+        Company Delete(int cvr);
     }
 }

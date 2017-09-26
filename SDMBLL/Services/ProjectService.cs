@@ -20,7 +20,7 @@ namespace SDMBLL.Services
             throw new NotImplementedException();
         }
 
-        public Project Get(int id)
+        public Project Get(int companyCvr)
         {
             throw new NotImplementedException();
         }
@@ -30,7 +30,7 @@ namespace SDMBLL.Services
             throw new NotImplementedException();
         }
 
-        public Project Delete(int id)
+        public Project Delete(int companyCvr)
         {
             throw new NotImplementedException();
         }
