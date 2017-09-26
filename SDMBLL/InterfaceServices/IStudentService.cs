@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SDMBLL.InterfaceServices
 {
-    class IStudent
+    class IStudentService
     {
     }
 }
