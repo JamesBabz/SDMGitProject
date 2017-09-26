@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SDMDAL\SDMDAL.csproj" />
     <ProjectReference Include="..\SDMEntity\SDMEntity.csproj" />
   </ItemGroup>
 

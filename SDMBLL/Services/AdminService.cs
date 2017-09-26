@@ -2,16 +2,20 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using SDMDAL;
+using SDMDAL.InterfaceRepositories;
 using SDMEntity.BE;
 
 namespace SDMBLL.Services
 {
-    class AdminService : IAdminService
-
+    public class AdminService : IAdminService
     {
+
+        private IAdminRepository repo = new DALFacade().AdminRepository;
+
         public Admin Create(Admin adm)
         {
-            throw new NotImplementedException();
+            return repo.Create(adm);
         }
 
         public Admin Delete(int Id)
@@ -26,7 +30,7 @@ namespace SDMBLL.Services
 
         public List<Admin> Getall()
         {
-            throw new NotImplementedException();
+            return repo.Getall();
         }
 
         public Admin Update(Admin adm)

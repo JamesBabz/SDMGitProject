@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SDMDAL.InterfaceRepositories
 {
-    interface IAdminRepository
+    public interface IAdminRepository
     {
         //C
         Admin Create(Admin adm);
@@ -21,4 +21,4 @@ namespace SDMDAL.InterfaceRepositories
         Admin Delete(int Id);
     }
 }
-}
+
