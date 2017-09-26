@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ClassLibrary1.BE
+namespace SDMEntity.BE
 {
-    class User
+    public class User
     {
         public int PersonId { get; set; }
         public string Username { get; set; }

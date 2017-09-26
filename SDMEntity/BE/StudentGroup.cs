@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ClassLibrary1.BE
+namespace SDMEntity.BE
 {
-    class StudentGroup
+    public class StudentGroup
     {
         public int StudentGroupID { get; set; }
 
