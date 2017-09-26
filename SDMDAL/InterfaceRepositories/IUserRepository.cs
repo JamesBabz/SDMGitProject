@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SDMDAL.InterfaceRepositories
 {
-    interface IUserRepository
+    public interface IUserRepository
     {
         //C
         User Create(User us);

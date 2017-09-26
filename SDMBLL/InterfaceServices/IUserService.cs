@@ -8,14 +8,14 @@ namespace SDMBLL.InterfaceServices
     public interface IUserService
     {
         //C
-        User Create(User);
+        User Create(User usr);
 
         //R
         List<User> Getall();
 
         User Get(int Id);
         //U
-        User Update(User);
+        User Update(User usr);
 
         //D
         User Delete(int Id);
