@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ClassLibrary1
+namespace SDMEntity
 {
     public class Class1
     {

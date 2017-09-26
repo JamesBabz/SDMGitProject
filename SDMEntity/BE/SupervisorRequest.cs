@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ClassLibrary1.BE
+namespace SDMEntity.BE
 {
-    class SupervisorRequest
+    public class SupervisorRequest
     {
         public int SupervisorId { get; set; }
         public int GroupId { get; set; }
