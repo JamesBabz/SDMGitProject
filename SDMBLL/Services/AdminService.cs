@@ -1,36 +1,35 @@
-﻿using System;
+﻿using SDMBLL.InterfaceServices;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using SDMEntity.BE;
 
 namespace SDMBLL.Services
 {
-    using SDMBLL.InterfaceServices;
+    class AdminService : IAdminService
 
-    using SDMEntity.BE;
-
-    public class ProfileService : IProfileService
     {
-        public CompanyProfile Create(CompanyProfile profile)
+        public Admin Create(Admin adm)
         {
             throw new NotImplementedException();
         }
 
-        public List<CompanyProfile> GetAll()
+        public Admin Delete(int Id)
         {
             throw new NotImplementedException();
         }
 
-        public CompanyProfile Get(int companyCvr)
+        public Admin Get(int Id)
         {
             throw new NotImplementedException();
         }
 
-        public CompanyProfile Update(CompanyProfile profile)
+        public List<Admin> Getall()
         {
             throw new NotImplementedException();
         }
 
-        public CompanyProfile Delete(int companyCvr)
+        public Admin Update(Admin adm)
         {
             throw new NotImplementedException();
         }
