@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using ClassLibrary1.BE;
 
 namespace SDMEntity.BE
 {
