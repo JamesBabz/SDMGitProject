@@ -6,29 +6,29 @@ using SDMEntity.BE;
 
 namespace SDMBLL.Services
 {
-    class StudentService : IStudentService
+    class SupervisorRequestService : ISupervisorRequestService
     {
-        public Student Create(Student student)
+        public SupervisorRequest Create(SupervisorRequest supervisorRequest)
         {
             throw new NotImplementedException();
         }
 
-        public List<Student> GetAll()
+        public List<SupervisorRequest> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public Student GetById(int id)
+        public SupervisorRequest GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Student Update(Student student)
+        public SupervisorRequest Update(SupervisorRequest supervisorRequest)
         {
             throw new NotImplementedException();
         }
 
-        public Student Delete(int id)
+        public SupervisorRequest Delete(int id)
         {
             throw new NotImplementedException();
         }
