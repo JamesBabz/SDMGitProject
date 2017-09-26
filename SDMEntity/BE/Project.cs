@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ClassLibrary1.BE
+namespace SDMEntity.BE
 {
     using System.Reflection.Metadata.Ecma335;
 
