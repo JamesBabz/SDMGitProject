@@ -12,12 +12,12 @@ namespace SDMBLL.InterfaceServices
 
         //R
         List<SupervisorRequest> GetAll();
-        SupervisorRequest GetById(int id);
+        SupervisorRequest GetBySupervisorAndGroupId(int sId, int gId);
 
         //U
         SupervisorRequest Update(SupervisorRequest supervisorRequest);
 
         //D
-        SupervisorRequest Delete(int id);
+        SupervisorRequest DeleteBySupervisorAndGroupId(int sId, int gId);
     }
 }
