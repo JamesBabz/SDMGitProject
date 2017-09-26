@@ -7,6 +7,8 @@ namespace SDMEntity.BE
 {
     public class ProjectRequest
     {
+        public int ID { get; set; }
+
         public int Priority { get; set; }
 
         public bool IsAccepted { get; set; }
