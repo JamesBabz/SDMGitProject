@@ -18,7 +18,7 @@ namespace SDMBLL.Services
             throw new NotImplementedException();
         }
 
-        public SupervisorRequest GetById(int id)
+        public SupervisorRequest GetBySupervisorAndGroupId(int sId, int gId)
         {
             throw new NotImplementedException();
         }
@@ -28,9 +28,10 @@ namespace SDMBLL.Services
             throw new NotImplementedException();
         }
 
-        public SupervisorRequest Delete(int id)
+        public SupervisorRequest DeleteBySupervisorAndGroupId(int sId, int gId)
         {
             throw new NotImplementedException();
         }
+        
     }
 }
