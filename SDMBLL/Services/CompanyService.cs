@@ -20,7 +20,7 @@ namespace SDMBLL.Services
             throw new NotImplementedException();
         }
 
-        public Company Get(int id)
+        public Company Get(int cvr)
         {
             throw new NotImplementedException();
         }
@@ -30,7 +30,7 @@ namespace SDMBLL.Services
             throw new NotImplementedException();
         }
 
-        public Company Delete(int id)
+        public Company Delete(int cvr)
         {
             throw new NotImplementedException();
         }
