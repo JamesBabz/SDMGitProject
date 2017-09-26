@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ClassLibrary1
+namespace SDMDAL
 {
     public class Class1
     {

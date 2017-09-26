@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
-using ClassLibrary1.BE;
 
-namespace ClassLibrary1
+namespace SDMEntity.BE
 {
-    class ProjectRequest
+    public class ProjectRequest
     {
         public int Priority { get; set; }
 

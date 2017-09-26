@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using ClassLibrary1.BE;
 
-namespace ClassLibrary1
+namespace SDMEntity.BE
 {
-    class Category
+    public class Category
     {
         public string Name { get; set; }
         
