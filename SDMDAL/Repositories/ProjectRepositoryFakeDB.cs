@@ -4,35 +4,50 @@ using System.Text;
 
 namespace SDMDAL.Repositories
 {
+    using System.Linq;
+
     using SDMDAL.InterfaceRepositories;
 
     using SDMEntity.BE;
 
     public class ProjectRepositoryFakeDB : IProjectRepository
     {
+
+        private static int id;
+        private static List<Project> projects = new List<Project>();
+
         public Project Create(Project project)
         {
-            throw new NotImplementedException();
+            Project newProject;
+            projects.Add(newProject = new Project()
+                                          {
+                                              Id = id++,
+                                              Name = project.Name,
+                                              CompanyCvr = project.CompanyCvr,
+                                              CreationDate = project.CreationDate,
+                                              ProjectDescription = project.ProjectDescription
+
+                                          });
+            return newProject;
         }
 
         public List<Project> GetAll()
         {
-            throw new NotImplementedException();
+           return new List<Project>(projects);
         }
 
         public Project Get(int id)
         {
-            throw new NotImplementedException();
+            return projects.FirstOrDefault(x => x.Id == id);
         }
 
-        public Project Update(Project project)
-        {
-            throw new NotImplementedException();
-        }
+ 
 
         public Project Delete(int id)
         {
-            throw new NotImplementedException();
+            var selectedProject = Get(id);
+            projects.Remove(selectedProject);
+            return selectedProject;
         }
     }
 }

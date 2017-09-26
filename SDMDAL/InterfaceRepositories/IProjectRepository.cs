@@ -17,7 +17,6 @@ namespace SDMDAL.InterfaceRepositories
         Project Get(int id);
 
         //U
-        Project Update(Project project);
 
         //D
         Project Delete(int id);

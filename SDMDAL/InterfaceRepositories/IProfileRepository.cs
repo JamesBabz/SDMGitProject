@@ -14,12 +14,12 @@ namespace SDMDAL.InterfaceRepositories
         //R
         List<CompanyProfile> GetAll();
 
-        CompanyProfile Get(int id);
+        CompanyProfile Get(int companyCvr);
 
         //U
-        CompanyProfile Update(CompanyProfile profile);
+
 
         //D
-        CompanyProfile Delete(int id);
+        CompanyProfile Delete(int companyCvr);
     }
 }
