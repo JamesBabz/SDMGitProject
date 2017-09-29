@@ -1,21 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using SDMBLL.InterfaceServices;
+﻿using SDMBLL.InterfaceServices;
 using SDMEntity.BE;
+using System;
+using System.Collections.Generic;
+using SDMDAL;
+using SDMDAL.InterfaceRepositories;
 
 namespace SDMBLL.Services
 {
-    class StudentService : IStudentService
+    public class StudentService : IStudentService
     {
+        private IStudentRepository repo = new DALFacade().StudentRepository;
+
         public Student Create(Student student)
         {
-            throw new NotImplementedException();
+            return repo.Create(student);
         }
 
         public List<Student> GetAll()
         {
-            throw new NotImplementedException();
+            return repo.GetAll();
         }
 
         public Student GetById(int id)
