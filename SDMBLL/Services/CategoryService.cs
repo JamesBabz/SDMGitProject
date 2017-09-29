@@ -8,30 +8,33 @@ using SDMEntity.BE;
 
 namespace SDMBLL.Services
 {
-    class SupervisorService : ISupervisorService
-    {
-        private ISupervisorRepository repo = new DALFacade().SupervisorRepository;
-        public Supervisor Create(Supervisor supervisor)
+        public class CategoryService : ICategoryService
+        {
+
+            private ICategoryRepository repo = new DALFacade().CategoryRepository; 
+
+
+        public Category Create(Category category)
+        {
+            return repo.Create(category);
+        }
+
+        public Category Delete(int id)
         {
             throw new NotImplementedException();
         }
 
-        public List<Supervisor> GetAll()
+        public List<Category> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public Supervisor GetById(int id)
+        public Category GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Supervisor Update(Supervisor supervisor)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Supervisor Delete(int id)
+        public Category Update(Category category)
         {
             throw new NotImplementedException();
         }

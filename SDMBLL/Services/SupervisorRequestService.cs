@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 using SDMBLL.InterfaceServices;
+using SDMDAL;
+using SDMDAL.InterfaceRepositories;
 using SDMEntity.BE;
 
 namespace SDMBLL.Services
 {
     class SupervisorRequestService : ISupervisorRequestService
     {
+        private ISupervisorRequestRepository repo = new DALFacade().SupervisorRequestRepository;
         public SupervisorRequest Create(SupervisorRequest supervisorRequest)
         {
             throw new NotImplementedException();

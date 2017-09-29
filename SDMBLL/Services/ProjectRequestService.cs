@@ -2,36 +2,33 @@
 using System.Collections.Generic;
 using System.Text;
 using SDMBLL.InterfaceServices;
-using SDMDAL;
-using SDMDAL.InterfaceRepositories;
 using SDMEntity.BE;
 
 namespace SDMBLL.Services
 {
-    class SupervisorService : ISupervisorService
+    class ProjectRequestService : IProjectRequestService
     {
-        private ISupervisorRepository repo = new DALFacade().SupervisorRepository;
-        public Supervisor Create(Supervisor supervisor)
+        public ProjectRequest Create(ProjectRequest projectRequest)
         {
             throw new NotImplementedException();
         }
 
-        public List<Supervisor> GetAll()
+        public ProjectRequest Delete(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Supervisor GetById(int id)
+        public List<ProjectRequest> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public Supervisor Update(Supervisor supervisor)
+        public ProjectRequest GetById(int pId, int gId)
         {
             throw new NotImplementedException();
         }
 
-        public Supervisor Delete(int id)
+        public ProjectRequest Update(ProjectRequest projectRequest)
         {
             throw new NotImplementedException();
         }
