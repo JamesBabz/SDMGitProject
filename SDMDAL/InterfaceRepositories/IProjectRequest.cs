@@ -13,13 +13,13 @@ namespace SDMDAL.InterfaceRepositories
         //R
         List<ProjectRequest> GetAll();
 
-        ProjectRequest Get(int projectRequestID);
-
+        ProjectRequest Get(int pId, int gId);
+        
         //U
 
 
         //D
-        ProjectRequest Delete(int ProjectRequestID);
+        ProjectRequest Delete(int pId, int gId);
 
     }
 }
