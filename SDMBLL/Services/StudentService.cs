@@ -23,7 +23,7 @@ namespace SDMBLL.Services
 
         public Student GetById(int id)
         {
-            throw new NotImplementedException();
+            return repo.GetById(id);
         }
 
         public Student Update(Student student)
@@ -33,7 +33,7 @@ namespace SDMBLL.Services
 
         public Student Delete(int id)
         {
-            throw new NotImplementedException();
+            return repo.Delete(id);
         }
     }
 }
