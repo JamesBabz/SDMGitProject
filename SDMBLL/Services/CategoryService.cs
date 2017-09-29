@@ -2,15 +2,21 @@
 using System.Collections.Generic;
 using System.Text;
 using SDMBLL.InterfaceServices;
+using SDMDAL;
+using SDMDAL.InterfaceRepositories;
 using SDMEntity.BE;
 
 namespace SDMBLL.Services
 {
-    class CategoryService : ICategoryService
-    {
+        public class CategoryService : ICategoryService
+        {
+
+            private ICategoryRepository repo = new DALFacade().CategoryRepository; 
+
+
         public Category Create(Category category)
         {
-            throw new NotImplementedException();
+            return repo.Create(category);
         }
 
         public Category Delete(int id)
