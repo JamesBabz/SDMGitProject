@@ -23,7 +23,7 @@ namespace SDMBLL.Services
             throw new NotImplementedException();
         }
 
-        public ProjectRequest GetById(int id)
+        public ProjectRequest GetById(int pId, int gId)
         {
             throw new NotImplementedException();
         }
