@@ -13,12 +13,12 @@ namespace SDMDAL.Repositories
     public class CompanyRepositoryFakeDB : ICompanyRepository
     {
 
-        private static List<Company> Companies = new List<Company>();
+        private List<Company> Companies = new List<Company>();
 
         public Company Create(Company company)
         {
             Company newCompany;
-            Companies.Add(newCompany = new Company()
+            newCompany = new Company()
                                            {
                                                Name = company.Name,
                                                Cvr = company.Cvr,
@@ -27,7 +27,8 @@ namespace SDMDAL.Repositories
                                                Mail = company.Mail,
                                                Phone = company.Phone
                                               
-                                           });
+                                           };
+            Companies.Add(newCompany);
             return newCompany;
         }
 

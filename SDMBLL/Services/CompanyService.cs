@@ -6,23 +6,28 @@ namespace SDMBLL.Services
 {
     using SDMBLL.InterfaceServices;
 
+    using SDMDAL;
+    using SDMDAL.InterfaceRepositories;
+
     using SDMEntity.BE;
 
     public class CompanyService : ICompanyService
     {
+        private ICompanyRepository repo = new DALFacade().CompanyRepository;
+
         public Company Create(Company company)
         {
-            throw new NotImplementedException();
+            return this.repo.Create(company);
         }
 
         public List<Company> GetAll()
         {
-            throw new NotImplementedException();
+            return this.repo.GetAll();
         }
 
         public Company Get(int cvr)
         {
-            throw new NotImplementedException();
+            return this.repo.Get(cvr);
         }
 
         public Company Update(Company company)
@@ -32,7 +37,7 @@ namespace SDMBLL.Services
 
         public Company Delete(int cvr)
         {
-            throw new NotImplementedException();
+           return this.repo.Delete(cvr);
         }
     }
 }
