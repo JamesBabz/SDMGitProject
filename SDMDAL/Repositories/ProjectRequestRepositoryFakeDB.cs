@@ -17,23 +17,22 @@ namespace SDMDAL.Repositories
             ProjectRequest newProjectRequest = null;
             projectRequests.Add(newProjectRequest = new ProjectRequest()
             {
-                ID = Id++,
                 Priority = newProjectRequest.Priority,
                 IsAccepted = newProjectRequest.IsAccepted
             });
             return newProjectRequest;
         }
 
-        public ProjectRequest Delete(int ProjectRequestID)
+        public ProjectRequest Delete(int pId, int gId)
         {
-            var projectFound = Get(ProjectRequestID);
+            var projectFound = Get(pId, gId);
             projectRequests.Remove(projectFound);
             return projectFound;
         }
 
-        public ProjectRequest Get(int projectRequestID)
+        public ProjectRequest Get(int pId, int gId)
         {
-            return projectRequests.FirstOrDefault(x => x.ID == projectRequestID);
+            return projectRequests.FirstOrDefault(x => x.ProjectID == pId && x.GroupID == gId);
         }
 
         public List<ProjectRequest> GetAll()
