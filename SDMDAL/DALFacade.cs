@@ -19,5 +19,6 @@ namespace SDMDAL
         public ICategoryRepository CategoryRepository => new CategoryRepositoryFakeDB();
         public IProjectRequest ProjectRequest => new ProjectRequestRepositoryFakeDB();
         public IStudentGroupRepository StudentGroupRepository => new StudentGroupRepositoryFakeDB();
+
     }
 }
