@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using SDMDAL.InterfaceRepositories;
+using SDMDAL.Repositories;
+
+namespace SDMDAL
+{
+    public class DALFacade
+    {
+        public ICompanyRepository CompanyRepository => new CompanyRepositoryFakeDB();
+        public IAdminRepository AdminRepository => new AdminRepositoryFakeDB();
+        public IProfileRepository ProfileRepository => new ProfileRepositoryFakeDB();
+        public IProjectRepository ProjectRepository => new ProjectRepositoryFakeDB();
+        public IStudentRepository StudentRepository => new StudentRepositoryFakeDB();
+        public ISupervisorRepository SupervisorRepository => new SupervisorRepositoryFakeDB();
+        public ISupervisorRequestRepository SupervisorRequestRepository => new SupervisorRequestRepositoryFakeDB();
+        public IUserRepository UserRepository => new UserRepositoryFakeDB();
+    }
+}
