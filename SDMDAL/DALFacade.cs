@@ -16,5 +16,9 @@ namespace SDMDAL
         public ISupervisorRepository SupervisorRepository => new SupervisorRepositoryFakeDB();
         public ISupervisorRequestRepository SupervisorRequestRepository => new SupervisorRequestRepositoryFakeDB();
         public IUserRepository UserRepository => new UserRepositoryFakeDB();
+        public ICategoryRepository CategoryRepository => new CategoryRepositoryFakeDB();
+        public IProjectRequest ProjectRequest => new ProjectRequestRepositoryFakeDB();
+        public IStudentGroupRepository StudentGroupRepository => new StudentGroupRepositoryFakeDB();
+
     }
 }

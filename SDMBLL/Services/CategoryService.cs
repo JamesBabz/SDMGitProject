@@ -6,11 +6,10 @@ using SDMEntity.BE;
 
 namespace SDMBLL.Services
 {
-    class CategoryService : ICategoryService
+        public class CategoryService : ICategoryService
     {
         public Category Create(Category category)
         {
-            throw new NotImplementedException();
         }
 
         public Category Delete(int id)
