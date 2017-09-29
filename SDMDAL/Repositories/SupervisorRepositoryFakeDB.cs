@@ -9,13 +9,14 @@ namespace SDMDAL.Repositories
 {
     class SupervisorRepositoryFakeDB : ISupervisorRepository
     {
-        private static int _id = 1;
-        private static readonly List<Supervisor> Supervisors = new List<Supervisor>();
+        private int _id = 1;
+        private readonly List<Supervisor> Supervisors = new List<Supervisor>();
 
 
         public Supervisor Create(Supervisor supervisor)
         {
-            Supervisor newSupervisor = new Supervisor()
+            Supervisor newSupervisor;
+            Supervisors.Add(newSupervisor = new Supervisor()
             {
                 Id = _id++,
                 Name = supervisor.Name,
@@ -23,7 +24,7 @@ namespace SDMDAL.Repositories
                 Email = supervisor.Email,
                 Phone = supervisor.Phone,
                 IsAvailable = true
-            };
+            });
             return newSupervisor;
         }
 
@@ -42,6 +43,12 @@ namespace SDMDAL.Repositories
             Supervisor foundSupervisor = GetById(id);
             Supervisors.Remove(foundSupervisor);
             return foundSupervisor;
+        }
+
+        public bool GetAvailability(int id)
+        {
+            Supervisor foundSupervisor = GetById(id);
+            return foundSupervisor.IsAvailable;
         }
     }
 }

@@ -9,7 +9,7 @@ namespace SDMDAL.Repositories
 {
     class SupervisorRequestRepositoryFakeDB : ISupervisorRequestRepository
     {
-        private static readonly List<SupervisorRequest> SupervisorRequests = new List<SupervisorRequest>();
+        private readonly List<SupervisorRequest> SupervisorRequests = new List<SupervisorRequest>();
 
         public SupervisorRequest Create(SupervisorRequest supervisorRequest)
         {

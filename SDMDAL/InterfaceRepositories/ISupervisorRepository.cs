@@ -14,5 +14,7 @@ namespace SDMDAL.InterfaceRepositories
 
         //D
         Supervisor Delete(int id);
+
+        bool GetAvailability(int id);
     }
 }
