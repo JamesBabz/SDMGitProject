@@ -6,23 +6,28 @@ namespace SDMBLL.Services
 {
     using SDMBLL.InterfaceServices;
 
+    using SDMDAL;
+    using SDMDAL.InterfaceRepositories;
+
     using SDMEntity.BE;
 
     public class ProjectService : IProjectService
     {
+        private IProjectRepository repo = new DALFacade().ProjectRepository;
+
         public Project Create(Project project)
         {
-            throw new NotImplementedException();
+            return this.repo.Create(project);
         }
 
         public List<Project> GetAll()
         {
-            throw new NotImplementedException();
+            return this.repo.GetAll();
         }
 
-        public Project Get(int companyCvr)
+        public Project Get(int id)
         {
-            throw new NotImplementedException();
+            return this.repo.Get(id);
         }
 
         public Project Update(Project project)
@@ -30,9 +35,9 @@ namespace SDMBLL.Services
             throw new NotImplementedException();
         }
 
-        public Project Delete(int companyCvr)
+        public Project Delete(int id)
         {
-            throw new NotImplementedException();
+            return this.repo.Delete(id);
         }
     }
 }
