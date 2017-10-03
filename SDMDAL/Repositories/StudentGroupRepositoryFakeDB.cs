@@ -7,19 +7,19 @@ using SDMEntity.BE;
 
 namespace SDMDAL.Repositories
 {
-    class StudentGroupRepositoryFakeDB : IStudentGroupRepository
+    public class StudentGroupRepositoryFakeDB : IStudentGroupRepository
     {
-        private static int Id = 1;
-        private static List<StudentGroup> studentGroups = new List<StudentGroup>();
+        private int Id = 1;
+        private List<StudentGroup> studentGroups = new List<StudentGroup>();
 
         public StudentGroup Create(StudentGroup group)
         {
-            StudentGroup newStudentGroup = null;
+            StudentGroup newStudentGroup;
             studentGroups.Add(newStudentGroup = new StudentGroup()
             {
                 StudentGroupID = Id++,
-                Name = newStudentGroup.Name,
-                Semester = newStudentGroup.Semester
+                Name = group.Name,
+                Semester = group.Semester
             });
             return newStudentGroup;
         }

@@ -9,16 +9,16 @@ namespace SDMDAL.Repositories
 {
     class ProjectRequestRepositoryFakeDB : IProjectRequest
     {
-        private static int Id = 1;
-        private static List<ProjectRequest> projectRequests = new List<ProjectRequest>();
+        private int Id = 1;
+        private List<ProjectRequest> projectRequests = new List<ProjectRequest>();
         
         public ProjectRequest Create(ProjectRequest projectRequest)
         {
-            ProjectRequest newProjectRequest = null;
+            ProjectRequest newProjectRequest;
             projectRequests.Add(newProjectRequest = new ProjectRequest()
             {
-                Priority = newProjectRequest.Priority,
-                IsAccepted = newProjectRequest.IsAccepted
+                Priority = projectRequest.Priority,
+                IsAccepted = projectRequest.IsAccepted
             });
             return newProjectRequest;
         }
