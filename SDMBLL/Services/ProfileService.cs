@@ -6,23 +6,28 @@ namespace SDMBLL.Services
 {
     using SDMBLL.InterfaceServices;
 
+    using SDMDAL;
+    using SDMDAL.InterfaceRepositories;
+
     using SDMEntity.BE;
 
     public class ProfileService : IProfileService
     {
+        private IProfileRepository repo = new DALFacade().ProfileRepository;
+
         public CompanyProfile Create(CompanyProfile profile)
         {
-            throw new NotImplementedException();
+            return this.repo.Create(profile);
         }
 
         public List<CompanyProfile> GetAll()
         {
-            throw new NotImplementedException();
+            return this.repo.GetAll();
         }
 
         public CompanyProfile Get(int companyCvr)
         {
-            throw new NotImplementedException();
+            return this.repo.Get(companyCvr);
         }
 
         public CompanyProfile Update(CompanyProfile profile)
@@ -32,7 +37,7 @@ namespace SDMBLL.Services
 
         public CompanyProfile Delete(int companyCvr)
         {
-            throw new NotImplementedException();
+            return this.repo.Delete(companyCvr);
         }
     }
 }

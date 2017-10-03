@@ -12,7 +12,7 @@ namespace SDMDAL.Repositories
 
     public class ProfileRepositoryFakeDB : IProfileRepository
     {
-        private static List<CompanyProfile> CompanyProfiles = new List<CompanyProfile>();
+        private List<CompanyProfile> CompanyProfiles = new List<CompanyProfile>();
 
         public CompanyProfile Create(CompanyProfile profile)
         {

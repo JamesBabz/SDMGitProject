@@ -9,9 +9,10 @@ namespace SDMDAL.Repositories
 {
     class StudentRepositoryFakeDB : IStudentRepository
     {
-        private static int Id = 1;
-        private static List<Student> Students = new List<Student>();
 
+        private int Id = 1;
+        private List<Student> Students = new List<Student>();
+       
         public Student Create(Student student)
         {
             Student newStudent;

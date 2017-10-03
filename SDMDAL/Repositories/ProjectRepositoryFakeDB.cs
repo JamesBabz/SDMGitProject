@@ -13,8 +13,8 @@ namespace SDMDAL.Repositories
     public class ProjectRepositoryFakeDB : IProjectRepository
     {
 
-        private static int id;
-        private static List<Project> projects = new List<Project>();
+        private  int id;
+        private  List<Project> projects = new List<Project>();
 
         public Project Create(Project project)
         {
