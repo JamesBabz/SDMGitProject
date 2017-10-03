@@ -8,22 +8,22 @@ using SDMEntity.BE;
 
 namespace SDMBLL.Services
 {
-    class SupervisorService : ISupervisorService
+    public class SupervisorService : ISupervisorService
     {
         private ISupervisorRepository repo = new DALFacade().SupervisorRepository;
         public Supervisor Create(Supervisor supervisor)
         {
-            throw new NotImplementedException();
+            return repo.Create(supervisor);
         }
 
         public List<Supervisor> GetAll()
         {
-            throw new NotImplementedException();
+            return repo.GetAll();
         }
 
         public Supervisor GetById(int id)
         {
-            throw new NotImplementedException();
+            return repo.GetById(id);
         }
 
         public Supervisor Update(Supervisor supervisor)
@@ -33,7 +33,12 @@ namespace SDMBLL.Services
 
         public Supervisor Delete(int id)
         {
-            throw new NotImplementedException();
+            return repo.Delete(id);
+        }
+
+        public bool GetAvailability(int id)
+        {
+            return repo.GetAvailability(id);
         }
     }
 }
