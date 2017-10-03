@@ -25,7 +25,7 @@ namespace SDMBLL.Services
 
         public Admin Get(int Id)
         {
-            throw new NotImplementedException();
+           return repo.Get(Id);
         }
 
         public List<Admin> Getall()

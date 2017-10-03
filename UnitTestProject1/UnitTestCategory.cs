@@ -15,6 +15,9 @@ namespace UnitTestProject1
         public void TestGetAllCategories()
         {
             var serv = new CategoryService();
+
+
+
             var cat = new Category()
             {
                 ID = 1,
@@ -44,7 +47,7 @@ namespace UnitTestProject1
 
             var newCat = serv.Create(cat);
 
-            Assert.AreEqual(cat.Name, "C#");
+            Assert.AreEqual(serv.GetById(1).Name, "C#");
         }
 
         [TestMethod]
