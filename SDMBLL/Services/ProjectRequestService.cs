@@ -2,15 +2,20 @@
 using System.Collections.Generic;
 using System.Text;
 using SDMBLL.InterfaceServices;
+using SDMDAL;
+using SDMDAL.InterfaceRepositories;
 using SDMEntity.BE;
 
 namespace SDMBLL.Services
 {
-    class ProjectRequestService : IProjectRequestService
+    public class ProjectRequestService : IProjectRequestService
     {
+
+        private IProjectRequest repo = new DALFacade().ProjectRequest;
+
         public ProjectRequest Create(ProjectRequest projectRequest)
         {
-            throw new NotImplementedException();
+           return repo.Create(projectRequest);
         }
 
         public ProjectRequest Delete(int id)
@@ -20,10 +25,10 @@ namespace SDMBLL.Services
 
         public List<ProjectRequest> GetAll()
         {
-            throw new NotImplementedException();
+            return repo.GetAll();
         }
 
-        public ProjectRequest GetById(int pId, int gId)
+        public ProjectRequest Get(int pId, int gId)
         {
             throw new NotImplementedException();
         }

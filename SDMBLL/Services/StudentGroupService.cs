@@ -2,30 +2,35 @@
 using System.Collections.Generic;
 using System.Text;
 using SDMBLL.InterfaceServices;
+using SDMDAL;
+using SDMDAL.InterfaceRepositories;
 using SDMEntity.BE;
 
 namespace SDMBLL.Services
 {
-    class StudentGroupService : IStudentGroupService
+    public class StudentGroupService : IStudentGroupService
     {
+
+        private IStudentGroupRepository repo = new DALFacade().StudentGroupRepository;
+
         public StudentGroup Create(StudentGroup studentGroup)
         {
-            throw new NotImplementedException();
+            return repo.Create(studentGroup);
         }
 
         public StudentGroup Delete(int id)
         {
-            throw new NotImplementedException();
+            return repo.Delete(id);
         }
 
         public List<StudentGroup> GetAll()
         {
-            throw new NotImplementedException();
+           return repo.GetAll();
         }
 
         public StudentGroup GetById(int id)
         {
-            throw new NotImplementedException();
+            return repo.Get(id);
         }
 
         public StudentGroup Update(StudentGroup studentGroup)

@@ -12,7 +12,7 @@ namespace SDMBLL.InterfaceServices
 
         //R
         List<ProjectRequest> GetAll();
-        ProjectRequest GetById(int pId, int gId);
+        ProjectRequest Get(int pId, int gId);
 
         //U
         ProjectRequest Update(ProjectRequest projectRequest);
