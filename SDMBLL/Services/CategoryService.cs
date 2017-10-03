@@ -21,17 +21,17 @@ namespace SDMBLL.Services
 
         public Category Delete(int id)
         {
-            throw new NotImplementedException();
+            return repo.Delete(id);
         }
 
         public List<Category> GetAll()
         {
-            throw new NotImplementedException();
+            return repo.GetAll();
         }
 
         public Category GetById(int id)
         {
-            throw new NotImplementedException();
+            return repo.Get(id);
         }
 
         public Category Update(Category category)

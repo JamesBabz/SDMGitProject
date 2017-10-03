@@ -9,8 +9,8 @@ namespace SDMDAL.Repositories
 {
     class CategoryRepositoryFakeDB : ICategoryRepository
     {
-        private static int Id = 1;
-        private static List<Category> Categories = new List<Category>();
+        private int Id = 1;
+        private List<Category> Categories = new List<Category>();
 
         public Category Create(Category category)
         {
