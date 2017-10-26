@@ -28,7 +28,7 @@ namespace UnitTestProject1
 
             var newStud = serv.Create(student);
 
-            Assert.AreEqual(newStud.Name, "Student Studsons");
+            Assert.AreEqual(newStud.Name, "Student Studson");
         }
 
 
@@ -47,7 +47,7 @@ namespace UnitTestProject1
             List<Student> allStudents = serv.GetAll();
 
 
-            Assert.AreEqual(1, allStudents.Count);
+            Assert.AreEqual(1, allStudents.Count+5);
 
         }
 
