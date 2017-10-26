@@ -12,7 +12,7 @@ namespace SDMDAL
         public IAdminRepository AdminRepository => new AdminRepositoryFakeDB();
         public IProfileRepository ProfileRepository => new ProfileRepositoryFakeDB();
         public IProjectRepository ProjectRepository => new ProjectRepositoryFakeDB();
-        public IStudentRepository StudentRepository => new StudentRepositoryFakeDB();
+        public IStudentRepository StudentRepository => new StudentRepodsfsfdssitoryFakeDB();
         public ISupervisorRepository SupervisorRepository => new SupervisorRepositoryFakeDB();
         public ISupervisorRequestRepository SupervisorRequestRepository => new SupervisorRequestRepositoryFakeDB();
         public IUserRepository UserRepository => new UserRepositoryFakeDB();
