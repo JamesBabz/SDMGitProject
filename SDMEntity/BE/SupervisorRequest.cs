@@ -6,7 +6,6 @@ namespace SDMEntity.BE
 {
     public class SupervisorRequest
     {
-        kurt
         public int SupervisorId { get; set; }
         public int GroupId { get; set; }
         public int AdminId { get; set; }
