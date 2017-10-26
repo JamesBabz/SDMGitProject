@@ -10,7 +10,6 @@ namespace SDMBLL.Services
 {
     public class AdminService : IAdminService
     {
-        kurt
         private IAdminRepository repo = new DALFacade().AdminRepository;
 
         public Admin Create(Admin adm)
