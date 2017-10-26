@@ -22,7 +22,7 @@ namespace UnitTestProject1
             };
             var newAdm = serv.Create(adm);
 
-            Assert.AreEqual(adm.Address, "Fejlvej");
+            Assert.AreEqual(adm.Address, "testvej");
         }
     }
 }
