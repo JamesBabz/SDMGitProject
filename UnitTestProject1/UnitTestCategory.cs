@@ -31,7 +31,7 @@ namespace UnitTestProject1
             var newCat = serv.Create(cat);
             var newCat2 = serv.Create(cat2);
 
-            Assert.AreEqual(serv.GetAll().Count, 3);
+            Assert.AreEqual(serv.GetAll().Count, 2);
         }
 
 

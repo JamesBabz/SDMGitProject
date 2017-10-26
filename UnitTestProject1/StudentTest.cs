@@ -28,7 +28,7 @@ namespace UnitTestProject1
 
             var newStud = serv.Create(student);
 
-            Assert.AreEqual(newStud.Name, "Student Studson");
+            Assert.AreEqual(newStud.Name, "Student Studsn");
         }
 
 
