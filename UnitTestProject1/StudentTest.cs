@@ -47,7 +47,7 @@ namespace UnitTestProject1
             List<Student> allStudents = serv.GetAll();
 
 
-            Assert.AreEqual(1, allStudents.Count+5);
+            Assert.AreEqual(1, allStudents.Count);
 
         }
 
