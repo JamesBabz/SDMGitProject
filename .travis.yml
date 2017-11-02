@@ -8,7 +8,5 @@ notifications:
   email: false
   dotnet: 2.0.0
 dist: trusty
-install:
-- dotnet restore
 script:
 - dotnet build
