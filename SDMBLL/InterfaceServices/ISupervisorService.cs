@@ -19,5 +19,7 @@ namespace SDMBLL.InterfaceServices
 
         //D
         Supervisor Delete(int id);
+
+        bool GetAvailability(int id);
     }
 }
